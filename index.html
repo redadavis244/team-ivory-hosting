@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Thrift store</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <link href="bootstrap-5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+      <div class="popup">
+        <button id="close">&times;</button>
+        <h1>Welcome to  Thrift Fashion Store</h1>
+        <p>Where you can get quality clothe at a cheaper price</p>
+        <input type="email" placeholder="input your email" id="user-input1">
+        <input type="text" placeholder="input your name" id="user-input2">
+        <a href="#" id="close1" onclick="shut()">submit</a>
+      </div>  
+
+
+
+
+
+
+        <div class="nav">
+            <div class="container-fluid">
+              <nav class="navbar navbar-expand-md bg-dark navbar-dark"><a href="#" class="navbar-brand">MENU</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                  <div class="navbar-nav mr-auto"><a href="index.html" class="nav-item nav-link active">Home</a> <a href="#header" class="nav-item nav-link">AboutUs</a> <a href="#products" class="nav-item nav-link">Products</a> <a href="#footer" class="nav-item nav-link">Contact us</a>
+                  </div>
+                  <div class="navbar-nav ml-auto">
+                    <div class="nav-item dropdown show"><a href="javascript:void(0);" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="true">User Account</a>
+                      <div class="dropdown-menu"><a href="#" class="dropdown-item">Login</a> <a href="#" class="dropdown-item">Register</a></div>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+
+
+
+          <div class="bottom-bar">
+            <div class="container-fluid">
+              <div class="row align-items-center">
+                <div class="col-md-3">
+                  <div class="logo"><h1>Thrift Store</h1></div>
+                </div>
+               
+                <div class="col-md-3">
+                  <div class="user"><a href="#" class="btn wishlist"><i class="fa fa-heart"></i> (<span>0</span>)</a> <a href="#" class="btn cart"><i class="fa fa-shopping-cart"></i>(<span id ="cart">0</span>)</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="header" id="header">
+            <div class="container-fluid">
+              <div class="row justify-content-between">
+                <div class="col-md-3">
+                  <nav class="navbar bg-light">
+                    <ul class="navbar-nav">
+                      <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-home"></i>Home</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-shopping-bag"></i>Best Selling</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-plus-square"></i>New Arrivals</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-female"></i>Fashion &amp; Beauty</a></li>
+                     
+                      <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-tshirt"></i>Men &amp; Women Clothes</a></li>
+                    </ul>
+                  </nav>
+                </div>
+
+
+                <div class="col-md-6 slideshow">
+                    <div id="slideshow-inner" data-component="slideshow">
+                        <div class="slide-cont" role="list">
+                            <div class="slide">
+                                <img src="OIP (1).jpg" alt="">
+                                <div class="slide-text">
+                                    <p>Explore our huge range of
+                                      quality second-hand fashion.</p>
+                                    <a href="#products"><i class="fa fa-shopping-cart"></i> shop now</a>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <img src="OIP (2).jpg" alt="">
+                                <div class="slide-text">
+                                    <p>Order clothes worth more than 50$ and get a 10% discount</p>
+                                    <a href="#products"><i class="fa fa-shopping-cart"></i> shop now</a>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <img src="OIP (3).jpg" alt="">
+                                <div class="slide-text">
+                                    <p>Subcribe to our newletter to get an update for our lastst product</p>
+                                    <a href="#products"><i class="fa fa-shopping-cart"></i> shop now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                  <div class="col-md-3">
+                    <div class="header-img">
+                      <div class="img-item"><img src="OIP (4).jpg" alt=""><a class="img-text" href="#">
+                        <p>Some text goes here that describes the image</p>
+                        </a></div>
+                      <div class="img-item"><img src="download (1).jpg" alt=""><a class="img-text" href="#">
+                        <p>Some text goes here that describes the image</p>
+                        </a></div>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature">
+            <div class="container-fluid">
+              <div class="row align-items-center">
+                <div class="col-lg-3 col-md-6 feature-col">
+                  <div class="feature-content"><i class="fab fa-cc-mastercard"></i>
+                    <h2>Secure Payment</h2>
+                    <p>When you place an order with us, you will receive an order confirmation e-mail.
+                      We only accept your order once payment has been approved and we have debited the payment card</p>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 feature-col">
+                  <div class="feature-content"><i class="fa fa-truck"></i>
+                    <h2>Worldwide Delivery</h2>
+                    <p>Our store provides tracked shipping of our order to you via Yodel. Shipping costs £3.95 for all orders.</p>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 feature-col">
+                  <div class="feature-content"><i class="fa fa-sync-alt"></i>
+                    <h2>30 Days Return</h2>
+                    <p>if it doesn't fit, or you change your mind, you have 30 days to return it to us for a full refund.</p>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 feature-col">
+                  <div class="feature-content"><i class="fa fa-comments"></i>
+                    <h2>24/7 Support</h2>
+                    <p>We at thrift fashion store are always ready to reply to our customer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="call-to-action">
+            <div class="container-fluid">
+              <div class="row align-items-center">
+                <div class="col-md-6">
+                  <h1>The Summer Sale is here!, Save up to 70% across thousands of top brands.</h1>
+                </div>
+                <div class="col-md-6"><h1 id="name"></h1></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="small-container">
+            <h2 class="title" id="products">Featured Products</h2>
+            <h2>Women section </h2>
+            <div class="row2">
+                <div class="col-4">
+                    <img src="pic6 (1).webp" alt="">
+                    <div class="rating"> 
+                      <i class="fa fa-star"></i> 
+                      <i class="fa fa-star"></i> 
+                      <i class="fa fa-star"></i> 
+                      <i class="fa fa-star"></i> 
+                      <i class="fa fa-star"></i>
+                  </div>
+                    <h4>Brownflair top</h4>
+                    <p>$5.00</p>
+                    <a id="Addcart">add to cart</a>
+                </div>
+                <div class="col-4">
+                    <img src="pic2 (2).webp" alt="">
+                    <div class="rating"> 
+                      <i class="fa fa-star"></i> 
+                      <i class="fa fa-star"></i> 
+                      <i class="fa fa-star"></i> 
+                      <i class="fa fa-star"></i> 
+                      <i class="fa fa-star"></i>
+                  </div>
+                    <h4>Orange T-shirt</h4>
+                    <p>$10.00</p>
+                    <a  id="Addcart">add to cart</a>
+                </div>
+                <div class="col-4">
+                    <img src="pic2 (4).webp" alt="">
+                    <div class="rating"> 
+                      <i class="fa fa-star"></i> 
+                      <i class="fa fa-star"></i> 
+                      <i class="fa fa-star"></i> 
+                      <i class="fa fa-star"></i> 
+                      <i class="fa fa-star"></i>
+                  </div>
+                    <h4>One sleeve dress</h4>
+                    <p>$50.00</p>
+                    <a  id="Addcart">add to cart</a>
+                </div>
+                <div class="col-4">
+                    <img src="pic5.webp" alt="">
+                    <div class="rating"> 
+                      <i class="fa fa-star"></i> 
+                      <i class="fa fa-star"></i> 
+                      <i class="fa fa-star"></i> 
+                      <i class="fa fa-star"></i> 
+                      <i class="fa fa-star"></i>
+                  </div>
+                    <h4>Sky blue jeans trouser</h4>
+                    <p>$20.00</p>
+                    <a id="Addcart">add to cart</a>
+                </div>
+            </div>
+            <h2>Men section</h2>
+            <div class="row2">
+              
+                <div class="col-4">
+                    <img src="m1.webp" alt="">
+                    <div class="rating"> 
+                      <i class="fa fa-star"></i> 
+                      <i class="fa fa-star"></i> 
+                      <i class="fa fa-star"></i> 
+                      <i class="fa fa-star"></i> 
+                      <i class="fa fa-star"></i>
+                  </div>
+                    <h4>Blue hoodie</h4>
+                    <p>$10.00</p>
+                    <a id="Addcart">add to cart</a>
+                </div>
+                <div class="col-4">
+                    <img src="m2.webp" alt="">
+                    <div class="rating"> 
+                      <i class="fa fa-star"></i> 
+                      <i class="fa fa-star"></i> 
+                      <i class="fa fa-star"></i> 
+                      <i class="fa fa-star"></i> 
+                      <i class="fa fa-star"></i>
+                  </div>
+                    <h4>Orange smile t-shirt</h4>
+                    <p>$10.00</p>
+                    <a id="Addcart">add to cart</a>
+                </div>
+                <div class="col-4">
+                    <img src="m3.webp" alt="">
+                    <div class="rating"> 
+                      <i class="fa fa-star"></i> 
+                      <i class="fa fa-star"></i> 
+                      <i class="fa fa-star"></i> 
+                      <i class="fa fa-star"></i> 
+                      <i class="fa fa-star"></i>
+                  </div>
+                    <h4>White shirt</h4>
+                    <p>$20.00</p>
+                    <a id="Addcart">add to cart</a>
+                </div>
+                <div class="col-4">
+                    <img src="m4.webp" alt="">
+                    <div class="rating"> 
+                      <i class="fa fa-star"></i> 
+                      <i class="fa fa-star"></i> 
+                      <i class="fa fa-star"></i> 
+                      <i class="fa fa-star"></i> 
+                      <i class="fa fa-star"></i>
+                  </div>
+                    <h4>Two colored trouser</h4>
+                    <p>$10.00</p>
+                    <a id="Addcart">add to cart</a>
+                </div>
+            </div>
+        </div>
+
+
+        
+        <div class="small-container">
+            <h2 class="title">New Arrivals</h2>
+            
+
+
+                 <div class="row2">
+                    <div class="col-4">
+                        <img src="m5.webp" alt="">
+                        <div class="rating"> 
+                          <i class="fa fa-star"></i> 
+                          <i class="fa fa-star"></i> 
+                          <i class="fa fa-star"></i> 
+                          <i class="fa fa-star"></i> 
+                          <i class="fa fa-star"></i>
+                      </div>
+                        <h4>Green trouser</h4>
+                        <p>$11.00</p>
+                        <a id="Addcart">add to cart</a>
+                    </div>
+                    <div class="col-4">
+                        <img src="p6.webp" alt="">
+                        <div class="rating"> 
+                          <i class="fa fa-star"></i> 
+                          <i class="fa fa-star"></i> 
+                          <i class="fa fa-star"></i> 
+                          <i class="fa fa-star"></i> 
+                          <i class="fa fa-star"></i>
+                      </div>
+                        <h4>Blue ruffle dress</h4>
+                        <p>$15.00</p>
+                        <a id="Addcart"> add to cart</a>
+                    </div>
+                    <div class="col-4">
+                        <img src="m7.webp" alt="">
+                        <div class="rating"> 
+                          <i class="fa fa-star"></i> 
+                          <i class="fa fa-star"></i> 
+                          <i class="fa fa-star"></i> 
+                          <i class="fa fa-star"></i> 
+                          <i class="fa fa-star"></i>
+                      </div>
+                        <h4>Two in oneshirt</h4>
+                        <p>$20.00</p>
+                        <a id="Addcart" onclick="plusTwo()">add to cart</a>
+                    </div>
+                    <div class="col-4">
+                        <img src="pic2 (1).webp" alt="">
+                        <div class="rating"> 
+                          <i class="fa fa-star"></i> 
+                          <i class="fa fa-star"></i> 
+                          <i class="fa fa-star"></i> 
+                          <i class="fa fa-star"></i> 
+                          <i class="fa fa-star"></i>
+                      </div>
+                        <h4>Pocadot  black Dress</h4>
+                        <p>$50.00</p>
+                        <!-- <a id="Addcart" onclick="addone()">add to cart</a> -->
+                        <a id="Addcart" onclick="plusOne()">add to cart</a>
+                    </div>
+                  </div>  
+        </div>
+
+
+
+          <div class="testimonial">
+            <div class="small-container">
+                <div class="row2">
+                    <div class="col-3">
+                        <i class="fa fa-quote-left"></i> 
+                        <p>My best order from TVF yet! Amazing quality and absolute killers in this order! Thank you so much!.</p>
+                        <div class="rating"> 
+                            <i class="fa fa-star"></i> 
+                            <i class="fa fa-star"></i> 
+                            <i class="fa fa-star"></i> 
+                            <i class="fa fa-star"></i> 
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <img src="img/review-3.jpg" >
+                        <h3>Jeana Kelly</h3>
+                    </div>
+
+                    <div class="col-3">
+                        <i class="fa fa-quote-left"></i> 
+                        <p>
+                           super fast shipping to australia not disappointed with the items I got, 
+                           will be placing another order ASAP! ✌🏾</p>
+                        <div class="rating"> 
+                            <i class="fa fa-star"></i> 
+                            <i class="fa fa-star"></i> 
+                            <i class="fa fa-star"></i> 
+                            <i class="fa fa-star"></i> 
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <img src="img/review-2.jpg" >
+                        <h3>Sammy Zaine</h3>
+                    </div>
+
+                    <div class="col-3">
+                        <i class="fa fa-quote-left"></i> 
+                        <p>there was one or two sweaters that weren't in the best quality but loved the rest!</p>
+                        <div class="rating"> 
+                            <i class="fa fa-star"></i> 
+                            <i class="fa fa-star"></i> 
+                            <i class="fa fa-star"></i> 
+                            <i class="fa fa-star"></i> 
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <img src="img/review-1.jpg" >
+                        <h3>Ruby Jean</h3>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+
+          <footer id="footer"> 
+            <div class="waves">
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
+            </div>
+            <ul class="social_icons">
+                <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            </ul> 
+    
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul> 
+            <p>@Teamivory | All Rights Reseverd</p>
+        </footer> 
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
